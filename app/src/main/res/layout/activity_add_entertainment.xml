@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddEntertainmentActivity"
+    android:orientation="vertical"
+    android:background="@color/nav_header_bg">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/AddEntertainment"
+        android:text="Add Money"
+        android:layout_marginTop="25pt"
+        android:layout_marginLeft="60pt"
+        android:background="@color/colorAccent1"
+        android:textColor="@android:color/white"/>
+
+    <!--<Button-->
+    <!--android:id="@+id/RemoveHome"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="60pt"-->
+    <!--android:layout_marginTop="25pt"-->
+    <!--android:text="Remove Money" />-->
+
+    <Button
+        android:id="@+id/ViewEntertainment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60pt"
+        android:layout_marginTop="50pt"
+        android:text="View Money"
+        android:background="@color/colorAccent1"
+        android:textColor="@android:color/white"/>
+</LinearLayout>

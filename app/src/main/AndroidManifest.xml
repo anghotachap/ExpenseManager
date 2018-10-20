@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dell.expensemanager">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher_expman"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_launcher_expman_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".WelcomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.MAIN"
+                    android:configChanges="keyboardHidden"
+                    android:screenOrientation="portrait" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="keyboardHidden"
+            android:label="Expense Manager"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddHomeActivity"
+            android:configChanges="keyboardHidden"
+            android:label="Home Expense"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DayActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EntertainmentActivity"
+            android:configChanges="keyboardHidden"
+            android:label="Entertainment Expense"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ClothsActivity"
+            android:configChanges="keyboardHidden"
+            android:label="Cloths Expense"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SportsActivity"
+            android:configChanges="keyboardHidden"
+            android:label="Sports Expense"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TravellingActivity"
+            android:configChanges="keyboardHidden"
+            android:label="Travelling Expense"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HomeActivity"
+            android:configChanges="keyboardHidden"
+            android:label="Home Expense"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WeekActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MonthActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".YearActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AllActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LoginActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RegisterActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name=".AddEntertainmentActivity"
+            android:configChanges="keyboardHidden"
+            android:label="Entertainment Expense"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".AddClothsActivity"
+            android:configChanges="keyboardHidden"
+            android:label="Cloths Expense"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".AddTravellingActivity"
+            android:configChanges="keyboardHidden"
+            android:label="Travelling Expense"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".AddSportsActivity"
+            android:configChanges="keyboardHidden"
+            android:label="Sports Expense"
+            android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>

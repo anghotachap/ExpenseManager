@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Expense Manager</string>
+    <string name="version_no">1.0</string>
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_1_title">Its all about where you spend it!</string>
+    <string name="slide_1_desc">The easiest way to track your expenses !</string>
+
+    <string name="slide_2_title">We Know where you spend it!</string>
+    <string name="slide_2_desc">5 main categories where it is spent!</string>
+
+    <string name="slide_3_title">Hello Budget Reports</string>
+    <string name="slide_3_desc">Plan your budget with PDF reports!</string>
+
+    <string name="slide_4_title">Lost data ? Do not Worry!</string>
+    <string name="slide_4_desc">One touch backup and restore!</string>
+
+    <string name="Open">openit</string>
+    <string name="Close">closeit</string>
+
+    <string name="create_account"><font color="#00ff00">text</font></string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="username">Username</string>
+    <string name="register">Register</string>
+    <string name="back_to_login">Back to Login</string>
+</resources>
