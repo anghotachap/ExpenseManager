@@ -23,13 +23,13 @@ public class LoginActivity extends AppCompatActivity {
 
     Button buttonLogin;
 
-    SqliteHelper sqliteHelper;
+    DatabaseHelper sqliteHelper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        sqliteHelper = new SqliteHelper(this);
+        sqliteHelper = new DatabaseHelper(this);
         initCreateAccountTextView();
         initViews();
 

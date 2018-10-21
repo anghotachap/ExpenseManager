@@ -59,12 +59,18 @@ public class TravellingActivity extends AppCompatActivity {
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        boolean isInserted = myDb.insertDataIntoTravel(displayDate.getText().toString(),TravellingNote.getText().toString()
-                                , TravellingPr.getText().toString());
-                        if(isInserted == true)
-                            Toast.makeText(TravellingActivity.this,"Travelling Expense Added",Toast.LENGTH_LONG).show();
-                        else
-                            Toast.makeText(TravellingActivity.this,"Travelling Expense Not Added ",Toast.LENGTH_LONG).show();
+                        String NoteT = TravellingNote.getText().toString();
+                        String PriceT = TravellingPr.getText().toString();
+                        if (NoteT.isEmpty() && PriceT.isEmpty()) {
+                            Toast.makeText(TravellingActivity.this, "All Fields Are Mandatry", Toast.LENGTH_LONG).show();
+                        } else {
+                            boolean isInserted = myDb.insertDataIntoTravel(displayDate.getText().toString(), TravellingNote.getText().toString()
+                                    , TravellingPr.getText().toString());
+                            if (isInserted == true)
+                                Toast.makeText(TravellingActivity.this, "Travelling Expense Added", Toast.LENGTH_LONG).show();
+                            else
+                                Toast.makeText(TravellingActivity.this, "Travelling Expense Not Added ", Toast.LENGTH_LONG).show();
+                        }
                     }
                 }
         );

@@ -26,13 +26,13 @@ public class RegisterActivity extends AppCompatActivity {
     Button buttonRegister;
 
 
-    SqliteHelper sqliteHelper;
+    DatabaseHelper sqliteHelper;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
-        sqliteHelper = new SqliteHelper(this);
+        sqliteHelper = new DatabaseHelper(this);
         initTextViewLogin();
         initViews();
         buttonRegister.setOnClickListener(new View.OnClickListener() {

@@ -24,82 +24,75 @@
         <activity
             android:name=".MainActivity"
             android:configChanges="keyboardHidden"
-            android:label="Expense Manager"
-            android:screenOrientation="portrait" />
+            android:label="Home"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity
             android:name=".AddHomeActivity"
             android:configChanges="keyboardHidden"
             android:label="Home Expense"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".DayActivity"
-            android:configChanges="keyboardHidden"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
         <activity
             android:name=".EntertainmentActivity"
             android:configChanges="keyboardHidden"
             android:label="Entertainment Expense"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
         <activity
             android:name=".ClothsActivity"
             android:configChanges="keyboardHidden"
             android:label="Cloths Expense"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
         <activity
             android:name=".SportsActivity"
             android:configChanges="keyboardHidden"
             android:label="Sports Expense"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
         <activity
             android:name=".TravellingActivity"
             android:configChanges="keyboardHidden"
             android:label="Travelling Expense"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
         <activity
             android:name=".HomeActivity"
             android:configChanges="keyboardHidden"
             android:label="Home Expense"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".WeekActivity"
-            android:configChanges="keyboardHidden"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".MonthActivity"
-            android:configChanges="keyboardHidden"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".YearActivity"
-            android:configChanges="keyboardHidden"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".AllActivity"
-            android:configChanges="keyboardHidden"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
         <activity
             android:name=".LoginActivity"
             android:configChanges="keyboardHidden"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
         <activity
             android:name=".RegisterActivity"
             android:configChanges="keyboardHidden"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
         <activity android:name=".AddEntertainmentActivity"
             android:configChanges="keyboardHidden"
             android:label="Entertainment Expense"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
         <activity android:name=".AddClothsActivity"
             android:configChanges="keyboardHidden"
             android:label="Cloths Expense"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
         <activity android:name=".AddTravellingActivity"
             android:configChanges="keyboardHidden"
             android:label="Travelling Expense"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
         <activity android:name=".AddSportsActivity"
             android:configChanges="keyboardHidden"
             android:label="Sports Expense"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
     </application>
 
 </manifest>

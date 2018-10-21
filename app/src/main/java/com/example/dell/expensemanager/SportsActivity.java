@@ -59,12 +59,18 @@ public class SportsActivity extends AppCompatActivity {
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        boolean isInserted = myDb.insertDataIntoSport(displayDate.getText().toString(),SportsNote.getText().toString()
-                                , SportsPr.getText().toString());
-                        if(isInserted == true)
-                            Toast.makeText(SportsActivity.this,"Sports Expense Added",Toast.LENGTH_LONG).show();
-                        else
-                            Toast.makeText(SportsActivity.this,"Sports Expense Not Added ",Toast.LENGTH_LONG).show();
+                        String NoteT = SportsNote.getText().toString();
+                        String PriceT = SportsPr.getText().toString();
+                        if (NoteT.isEmpty() && PriceT.isEmpty()) {
+                            Toast.makeText(SportsActivity.this, "All Fields Are Mandatry", Toast.LENGTH_LONG).show();
+                        } else {
+                            boolean isInserted = myDb.insertDataIntoSport(displayDate.getText().toString(), SportsNote.getText().toString()
+                                    , SportsPr.getText().toString());
+                            if (isInserted == true)
+                                Toast.makeText(SportsActivity.this, "Sports Expense Added", Toast.LENGTH_LONG).show();
+                            else
+                                Toast.makeText(SportsActivity.this, "Sports Expense Not Added ", Toast.LENGTH_LONG).show();
+                        }
                     }
                 }
         );

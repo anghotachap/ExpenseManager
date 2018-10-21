@@ -9,7 +9,7 @@ public class PrefManager {
 
     int PRIVATE_MODE = 0;
 
-    private static final String PREF_NAME = "androidhive-welcome";
+    private static final String PREF_NAME = "Expense-Manager-Welcome";
 
     private static final String IS_FIRST_TIME_LAUNCH = "IsFirstTimeLaunch";
 

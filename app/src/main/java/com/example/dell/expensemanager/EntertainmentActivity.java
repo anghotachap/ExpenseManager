@@ -59,12 +59,18 @@ public class EntertainmentActivity extends AppCompatActivity {
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        boolean isInserted = myDb.insertDataIntoEnt(displayDate.getText().toString(),EntertainmentNote.getText().toString()
-                                , EntertainmentPr.getText().toString());
-                        if(isInserted == true)
-                            Toast.makeText(EntertainmentActivity.this,"Entertainment Expense Added",Toast.LENGTH_LONG).show();
-                        else
-                            Toast.makeText(EntertainmentActivity.this,"Entertainment Expense Not Added ",Toast.LENGTH_LONG).show();
+                        String NoteT = EntertainmentNote.getText().toString();
+                        String PriceT = EntertainmentPr.getText().toString();
+                        if (NoteT.isEmpty() && PriceT.isEmpty()) {
+                            Toast.makeText(EntertainmentActivity.this, "All Fields Are Mandatry", Toast.LENGTH_LONG).show();
+                        } else {
+                            boolean isInserted = myDb.insertDataIntoEnt(displayDate.getText().toString(), EntertainmentNote.getText().toString()
+                                    , EntertainmentPr.getText().toString());
+                            if (isInserted == true)
+                                Toast.makeText(EntertainmentActivity.this, "Entertainment Expense Added", Toast.LENGTH_LONG).show();
+                            else
+                                Toast.makeText(EntertainmentActivity.this, "Entertainment Expense Not Added ", Toast.LENGTH_LONG).show();
+                        }
                     }
                 }
         );

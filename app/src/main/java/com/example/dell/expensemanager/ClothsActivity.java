@@ -59,12 +59,18 @@ public class ClothsActivity extends AppCompatActivity {
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        boolean isInserted = myDb.insertDataIntoClo(displayDate.getText().toString(),ClothsNote.getText().toString()
-                                , ClothsPr.getText().toString());
-                        if(isInserted == true)
-                            Toast.makeText(ClothsActivity.this,"Cloths Expense Added",Toast.LENGTH_LONG).show();
-                        else
-                            Toast.makeText(ClothsActivity.this,"Cloths Expense Not Added ",Toast.LENGTH_LONG).show();
+                        String NoteT = ClothsNote.getText().toString();
+                        String PriceT = ClothsPr.getText().toString();
+                        if (NoteT.isEmpty() && PriceT.isEmpty()) {
+                            Toast.makeText(ClothsActivity.this, "All Fields Are Mandatry", Toast.LENGTH_LONG).show();
+                        } else {
+                            boolean isInserted = myDb.insertDataIntoClo(displayDate.getText().toString(), ClothsNote.getText().toString()
+                                    , ClothsPr.getText().toString());
+                            if (isInserted == true)
+                                Toast.makeText(ClothsActivity.this, "Cloths Expense Added", Toast.LENGTH_LONG).show();
+                            else
+                                Toast.makeText(ClothsActivity.this, "Cloths Expense Not Added ", Toast.LENGTH_LONG).show();
+                        }
                     }
                 }
         );

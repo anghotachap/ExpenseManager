@@ -56,17 +56,25 @@ public class HomeActivity extends AppCompatActivity {
         });
 
     }
+
+
     public  void AddHome() {
         AddHome.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        boolean isInserted = myDb.insertDataIntoHome(displayDate.getText().toString(),HomeNote.getText().toString()
-                                , HomePr.getText().toString());
-                        if(isInserted == true)
-                            Toast.makeText(HomeActivity.this,"Home Expense Added",Toast.LENGTH_LONG).show();
-                        else
-                            Toast.makeText(HomeActivity.this,"Home Expense Not Added ",Toast.LENGTH_LONG).show();
+                        String NoteT = HomeNote.getText().toString();
+                        String PriceT = HomePr.getText().toString();
+                        if (NoteT.isEmpty() && PriceT.isEmpty()) {
+                            Toast.makeText(HomeActivity.this, "All Fields Are Mandatry", Toast.LENGTH_LONG).show();
+                        } else {
+                            boolean isInserted = myDb.insertDataIntoHome(displayDate.getText().toString(), HomeNote.getText().toString()
+                                    , HomePr.getText().toString());
+                            if (isInserted == true)
+                                Toast.makeText(HomeActivity.this, "Home Expense Added", Toast.LENGTH_LONG).show();
+                            else
+                                Toast.makeText(HomeActivity.this, "Home Expense Not Added ", Toast.LENGTH_LONG).show();
+                        }
                     }
                 }
         );
