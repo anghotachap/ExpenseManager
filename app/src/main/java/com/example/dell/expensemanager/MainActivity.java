@@ -78,6 +78,15 @@ public class MainActivity extends AppCompatActivity
             case R.id.All:
                 fragmentClass =All.class;
                 break;
+            case R.id.Backup:
+                fragmentClass =Backup.class;
+                break;
+                case R.id.Restore:
+                fragmentClass =Restore.class;
+                break;
+                case R.id.PDF:
+                fragmentClass =Report.class;
+                break;
             case R.id.Logout:
                 finish();
                 Intent intentLoadNewActivity=new Intent(MainActivity.this,LoginActivity.class);
